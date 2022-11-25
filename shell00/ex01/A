@@ -1,0 +1,25 @@
+u = user
+g = group
+o = other
+
+chmod = change mode (set or modify a file's permissions)
+
++ = add
+- = remove
+
+r = read
+w = write
+x = execute
+
+= = equal
+
+4 = read
+2 = write
+1 = execute
+0 = no permission
+
+chmod u=r,g=rx,o=rx testShell00
+
+man touch
+touch -t [DDMMhhmm] <filename>
+touch -t 01062342 testShell00

@@ -1,0 +1,5 @@
+touch z (create a file)
+echo "Z" > z 
+	echo = display a line of text/ string on standard output or a file
+
+|| using NANO or VIM to write the text inside the file
