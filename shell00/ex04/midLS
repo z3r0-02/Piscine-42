@@ -1,4 +1,5 @@
 ls -ptUm
 
+//RTFM = read the fucking manual = man ls
 //ls = list, -m = commas, -p = directories end with /(slash), -t = order of modification date
 // U = list orders in de=irectory order???
