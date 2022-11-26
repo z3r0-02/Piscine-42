@@ -1,0 +1,11 @@
+mkdir
+touch
+
+hard link = ln
+symbolic link = ln -s
+
+chmod
+
+touch -t
+
+iOS = symbolic link permission change = chmod -h
