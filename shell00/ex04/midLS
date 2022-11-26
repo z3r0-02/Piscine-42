@@ -1,0 +1,4 @@
+ls -ptUm
+
+//ls = list, -m = commas, -p = directories end with /(slash), -t = order of modification date
+// U = list orders in de=irectory order???
