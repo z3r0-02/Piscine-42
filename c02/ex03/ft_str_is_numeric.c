@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thbui <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: thbui <thbui@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 16:58:24 by thbui             #+#    #+#             */
-/*   Updated: 2022/10/20 17:15:46 by thbui            ###   ########.fr       */
+/*   Updated: 2023/01/20 02:11:37 by thbui            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <string.h>
+
 
 int	ft_str_is_numeric(char *str)
 {
@@ -17,19 +17,13 @@ int	ft_str_is_numeric(char *str)
 
 	i = 0;
 	if (str[i] == '\0')
-	{
 		return (1);
-	}
 	while (str[i] != '\0')
 	{
 		if (str[i] >= '0' && str[i] <= '9')
-		{
 			i++;
-		}
 		else
-		{
 			return (0);
-		}
 	}
 	return (1);
 }

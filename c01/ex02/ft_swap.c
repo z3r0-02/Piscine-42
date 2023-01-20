@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thbui <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: thbui <thbui@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 22:14:22 by thbui             #+#    #+#             */
-/*   Updated: 2022/10/16 15:59:05 by thbui            ###   ########.fr       */
+/*   Updated: 2023/01/20 02:05:33 by thbui            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_swap(int *a, int *b)
 {
-	int	ugh;
+	int	temp;
 
-	ugh = *a;
+	temp = *a;
 	*a = *b;
-	*b = ugh;
+	*b = temp;
 }

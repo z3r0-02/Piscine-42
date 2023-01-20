@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thbui <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: thbui <thbui@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 21:43:29 by thbui             #+#    #+#             */
-/*   Updated: 2022/10/24 22:38:02 by thbui            ###   ########.fr       */
+/*   Updated: 2023/01/20 02:18:00 by thbui            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,7 @@ char	*ft_strstr(char *str, char *to_find)
 		while (str[i + j] != '\0' && str[i + j] == to_find[j])
 		{
 			if (to_find[j + 1] == '\0')
-			{
 				return (&str[i]);
-			}
 			j++;
 		}
 		i++;

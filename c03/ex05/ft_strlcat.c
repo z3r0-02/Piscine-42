@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thbui <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: thbui <thbui@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 22:39:41 by thbui             #+#    #+#             */
-/*   Updated: 2022/10/24 22:50:08 by thbui            ###   ########.fr       */
+/*   Updated: 2023/01/20 02:18:15 by thbui            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@ int	ft_strlen(char *str)
 
 	count = 0;
 	while (str[count] != '\0')
-	{
 		count++;
-	}
 	return (count);
 }
 

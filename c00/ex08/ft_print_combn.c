@@ -3,17 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_combn.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thbui <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: thbui <thbui@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 23:19:25 by thbui             #+#    #+#             */
-/*   Updated: 2022/10/16 23:41:56 by thbui            ###   ########.fr       */
+/*   Updated: 2023/01/20 02:04:29 by thbui            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//I_don't_understand_the_question;
-//sad;
-//never_mind;
-//I_do_now;
 
 #include <unistd.h>
 

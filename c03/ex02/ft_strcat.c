@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thbui <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: thbui <thbui@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 15:34:01 by thbui             #+#    #+#             */
-/*   Updated: 2022/10/24 15:49:42 by thbui            ###   ########.fr       */
+/*   Updated: 2023/01/20 02:17:25 by thbui            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ char	*ft_strcat(char *dest, char *src)
 	i = 0;
 	j = 0;
 	while (dest[i] != '\0')
-	{
 		i++;
-	}
 	while (src[j] != '\0')
 	{
 		dest[i + j] = src [j];

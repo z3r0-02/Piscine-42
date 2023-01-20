@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thbui <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: thbui <thbui@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 20:49:17 by thbui             #+#    #+#             */
-/*   Updated: 2022/10/28 00:45:48 by thbui            ###   ########.fr       */
+/*   Updated: 2023/01/20 02:13:51 by thbui            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
 #include <string.h>
 
 void	ft_putchar(char c)
@@ -33,9 +33,7 @@ void	ft_putstr_non_printable(char *str)
 	while (str[i] != '\0')
 	{
 		if (ft_printable(str[i]) == 1)
-		{
 			ft_putchar(str[i]);
-		}
 		else
 		{
 			ft_putchar('\\');
