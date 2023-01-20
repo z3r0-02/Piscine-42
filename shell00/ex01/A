@@ -7,16 +7,12 @@ chmod = change mode (set or modify a file's permissions)
 + = add
 - = remove
 
-r = read
-w = write
-x = execute
+4 / r = read
+2 / w = write
+1 / x = execute
+0 = no permission
 
 = = equal
-
-4 = read
-2 = write
-1 = execute
-0 = no permission
 
 chmod u=r,g=rx,o=rx testShell00
 
