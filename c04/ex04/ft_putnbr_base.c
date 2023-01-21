@@ -66,14 +66,14 @@ void ft_putnbr_base(int nb, char *base)
 	}
 }
 
-int		main(void)
-{
-	ft_putnbr_base(000, "");
-	write(1, "\n", 1);
-	ft_putnbr_base(40, "poneyvif");
-	write(1, "\n", 1);
-	ft_putnbr_base(894867, "0123456789");
-	write(1, "\n", 1);
-	ft_putnbr_base(53, "0123456789abcdef");
-    return (0);
-}
+// int		main(void)
+// {
+// 	ft_putnbr_base(000, "");
+// 	write(1, "\n", 1);
+// 	ft_putnbr_base(40, "poneyvif");
+// 	write(1, "\n", 1);
+// 	ft_putnbr_base(894867, "0123456789");
+// 	write(1, "\n", 1);
+// 	ft_putnbr_base(53, "0123456789abcdef");
+//     return (0);
+// }

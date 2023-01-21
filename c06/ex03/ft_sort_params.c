@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_params.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thbui <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: thbui <thbui@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 01:59:39 by thbui             #+#    #+#             */
-/*   Updated: 2022/10/28 03:11:44 by thbui            ###   ########.fr       */
+/*   Updated: 2023/01/21 14:34:27 by thbui            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,5 +74,61 @@ int	main(int argc, char **argv)
 		sort(argc, argv);
 		print(argv + 1);
 	}		
+	return (0);
+}
+
+
+//--------------------------------------------------------------------------//
+
+
+void ft_putstr (char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i])
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
+}
+
+int main(int argc, char **argv)
+{
+	int i;
+	int j;
+	int k;
+	char *tmp;
+
+	i = 1;
+	k = 0;
+	while (argc > i)
+	{
+		k = i;
+		while (argc > k)
+		{
+			j = 0;
+			while (argv[i][j] && argv[k][j])
+			{
+				if (argv[i][j] > argv[k][j])
+				{
+					tmp = argv[i];
+					argv[i] = argv[k];
+					argv[k] = tmp;
+					break;
+				}
+				j++;
+			}
+			k++;
+		}
+		i++; 
+	}
+	i = 1;
+	while (argv[i])
+	{
+		ft_putstr(argv[i]);
+		i++;
+		write(1, "\n", 1);
+	}
 	return (0);
 }

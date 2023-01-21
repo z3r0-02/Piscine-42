@@ -6,7 +6,7 @@
 /*   By: thbui <thbui@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 00:34:02 by thbui             #+#    #+#             */
-/*   Updated: 2023/01/20 02:20:57 by thbui            ###   ########.fr       */
+/*   Updated: 2023/01/21 14:30:20 by thbui            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int	ft_atoi(char *str)	//atoi with multiple "+" and "-"
 	i = 0;
 	sign = 1;
 	result = 0;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\v'
-		|| str[i] == '\r' || str[i] == '\n' || str[i] == '\f')
+	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\v'		//for spaces, there is a smarter way to do it, with ascii numbers
+		|| str[i] == '\r' || str[i] == '\n' || str[i] == '\f')		// ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
 	while (str[i] == '-' || str[i] == '+')
 	{
